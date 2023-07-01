@@ -42,19 +42,15 @@ public class User {
 
 	@NotEmpty(message = "name cannot be empty")
 	@NotNull(message = "name cannot be null")
-	private String idade;
+	private String phone;
 
 	@NotEmpty(message = "name cannot be empty")
 	@NotNull(message = "name cannot be null")
-	private String telefone;
+	private String dateOfBirth;
 
 	@NotEmpty(message = "name cannot be empty")
 	@NotNull(message = "name cannot be null")
-	private String dataNascimento;
-
-	@NotEmpty(message = "name cannot be empty")
-	@NotNull(message = "name cannot be null")
-	private String sexo;
+	private String sex;
 
 	@NotEmpty(message = "name cannot be empty")
 	@NotNull(message = "name cannot be null")
@@ -71,17 +67,16 @@ public class User {
 	}
 
 	public User(String firstName, String lastName, String email, String password,
-				String idade, String telefone, String dataNascimento, String sexo,
+				 String phone, String dateOfBirth, String sex,
 				String cpf,	Collection<Role> roles) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
-		this.idade = idade;
-		this.telefone = telefone;
-		this.dataNascimento = dataNascimento;
-		this.sexo = sexo;
+		this.phone = phone;
+		this.dateOfBirth = dateOfBirth;
+		this.sex = sex;
 		this.cpf = cpf;
 		this.roles = roles;
 	}
