@@ -1,4 +1,4 @@
-package net.javaguides.springboot.service;
+package net.javaguides.springboot.usecase;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -11,8 +11,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import net.javaguides.springboot.model.Role;
-import net.javaguides.springboot.model.User;
+import net.javaguides.springboot.entity.Role;
+import net.javaguides.springboot.entity.User;
 import net.javaguides.springboot.repository.UserRepository;
 import net.javaguides.springboot.controller.dto.UserRegistrationDto;
 
